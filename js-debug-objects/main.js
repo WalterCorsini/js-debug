@@ -86,3 +86,6 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+// errori logici e di sintassi
+// mostra in console 3 array distinti: 1 per macchine a benzina, 1 per macchine diesel e 1 per le restanti auto con alimentazione diversa.
