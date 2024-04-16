@@ -29,19 +29,20 @@
 // ESERCIZIO 2
 // function printColorsNumber() {
 //     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+//     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 // }
 // printColorsNumber();
+// errore di sintassi nella riga 32 "length" e non "lenght"
 
 
-// // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+// ESERCIZIO 3
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 
 // // ESERCIZIO 4
