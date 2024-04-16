@@ -56,7 +56,8 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },                                      
+    // MANCAVA LA VIRGOLA
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,14 +65,15 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter((auto) => auto.type.toLowerCase() === 'benzina');      
+// ARROW FUNCTION "=>" E NON ">=" // MANCA LA FUNZIONE TOLOWERCASE PERCHE ALCUNE AUTO HANNO IL TIPO DI ALIMENTAZIONE CON DELLE MAIUSCOLE
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type.toLocaleLowerCase() === 'diesel');
+// MANCA IL RETURN PERCHE NONOSTANTE SIA UN ARROW FUNCTION CI SONO LE GRAFFE // MANCA TOLOWER CASE AD AUTO.TYPE
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type.toLowerCase() !== 'benzina' && auto.type.toLocaleLowerCase() !== 'diesel';
+// ERRORE NEL NON METTERE TOLOWERCASE AI DUE AUTO.TYPE PER IL CONTROLLO SUI CARATTERI MINUSCOLI E MAIUSCOLI E L'OPERATORE LOGICO AND ANZICHE OR
 });
 
 console.log('Auto a benzina');
