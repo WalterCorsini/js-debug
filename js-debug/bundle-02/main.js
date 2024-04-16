@@ -37,13 +37,13 @@
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
+    const userNumber = parseInt(prompt('Inserisci un numero'));
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
-
+// errore riga 40 assicurandoci che il nostro utente inserisca un numero senza fare troppi controlli prima del prompt che resituisce delle stringe,dobbiamo passargli la funzione "parseInt"
 
 // // ESERCIZIO 4
 // function checkAccess() {
