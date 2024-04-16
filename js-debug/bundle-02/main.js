@@ -11,19 +11,19 @@
 
 
 // ESERCIZIO 1
-function checkAge() {
-    const myAge = 32;
-    let message = '';
+// function checkAge() {
+//     const myAge = 32;
+//     let message = '';
 
-    if (myAge < 18) {
-        console.log(`Sei troppo giovane! Hai ${myAge} anni!`);
-    } else {
-        console.log('Hai più di 18 anni!');
-    }
-}
-checkAge();
+//     if (myAge < 18) {
+//         console.log(`Sei troppo giovane! Hai ${myAge} anni!`);
+//     } else {
+//         console.log('Hai più di 18 anni!');
+//     }
+// }
+// checkAge();
 // errore riga 16 la variabile non puo essere dichiarata con const perche il suo valore cambia
-// erorre la funzione dovrebbe restituire la variabile message con un return e a sua volta la funzione invocata dovrebbe essere salvata in una variabile o dentro la condizione dovrebbero esserci dei console.log
+// erorre la funzione dovrebbe restituire la variabile message con un return e a sua volta la funzione invocata dovrebbe essere salvata in una variabile o dentro la condizione dovrebbero esserci dei console.log e quindi la variabile message non avrebbe senso.
 
 
 // ESERCIZIO 2
